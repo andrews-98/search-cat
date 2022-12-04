@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+$shadow-dark: #000;
+$white-theme: #fff;
+$background-theme:rgb(228, 228, 15);
+$text-theme: #ffff00;
+
+body {
+    height: 100vh;
+    background: $background-theme;
+   
+}
+
+.mat-typography h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+* {
+    margin: 0;
+}
+.mat-body, 
+.mat-body-1, 
+.mat-typography{
+    font-size: 16px;
+}

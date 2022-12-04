@@ -3,7 +3,12 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  CatDataBaseUrl: 'https://api.thecatapi.com/v1/images/search',
+  ListBreedsDataUrl: 'https://api.thecatapi.com/v1/breeds',
+  SearchSelectedBreedDataUrl: 'https://api.thecatapi.com/v1/images/search',
+  XAPIKeyHeaderName: 'x-api-key',
+  XAPIKeyHeaderValue: 'live_8eKdoKoHzZjVHTfzZkms5EHCCGi0hYoQ8ihwVqPVzm0DFzdaYC8xPvQkASaRjgv0'
 };
 
 /*
