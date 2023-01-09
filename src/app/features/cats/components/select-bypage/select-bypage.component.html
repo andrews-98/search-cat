@@ -1,0 +1,8 @@
+<mat-form-field appearance="fill">
+    <mat-label>Per page</mat-label>
+    <mat-select [(ngModel)]="selectedPage" name="state" >
+      <mat-option *ngFor="let state of statesPage" [value]="state" (click)="onSelectedPage(selectedPage)">
+        {{state}}
+      </mat-option>
+    </mat-select> 
+  </mat-form-field>

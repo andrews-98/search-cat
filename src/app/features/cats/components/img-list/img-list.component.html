@@ -1,0 +1,6 @@
+<div class="img-card" *ngIf="imgList; else loadingTemplate">
+    <div class="img-item" *ngFor="let item of imgList">
+        <img [src]="item.url">
+    </div>
+</div>
+<ng-template #loadingTemplate>Loading photo...</ng-template>

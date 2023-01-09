@@ -1,6 +1,6 @@
-<app-header></app-header>
+<router-outlet></router-outlet>
 
-<div class="container">
+<!-- <div class="container">
     <div class="wrap">
         <div class="main">
             <div class="main-title">
@@ -9,34 +9,15 @@
             <div class="main-content">
                 <div class="filter-items">
                     <div class="breed">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Breed</mat-label>
-                            <mat-select [(ngModel)]="selectedBreed" name="state" (ngModelChange)="onBreedSelected()">
-                              <mat-option (click)="getDataCat()">All</mat-option>
-                              <mat-option *ngFor="let state of statesBreed" [value]="state">
-                                {{state.name}}
-                              </mat-option>
-                            </mat-select>
-                          </mat-form-field>
+                       
         
                     </div>
                     <div class="per-page">
-                        <mat-form-field appearance="fill">
-                            <mat-label>Per page</mat-label>
-                            <mat-select [(ngModel)]="selectedPage" name="state" (ngModelChange)="isAllActivated ? getDataCat() : onBreedSelected()" >
-                              <mat-option *ngFor="let state of statesPage" [value]="state">
-                                {{state}}
-                              </mat-option>
-                            </mat-select> 
-                          </mat-form-field>
+                       
                     </div>
                 </div>
-                <div class="img-card">
-                    <div class="card-item" *ngFor="let cat of catList">
-                        <img [src]="cat.url">
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
-</div>
+</div> -->

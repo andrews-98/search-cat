@@ -1,0 +1,19 @@
+.img-card {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+
+
+    .img-item {
+        img {
+            width: 125px;
+            height: 125px;
+            padding: 1px;
+            display: flex;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<mat-card class="mat-card">
+    <h1 class="title">Favorite Cats</h1>
+    <div class="card-select">
+        <div class="select-breed">
+            <app-select-breed (emitBreed)="getSelectedBreed($event)"></app-select-breed>
+        </div>
+        <div class="select-bypage">
+            <app-select-bypage (emitPage)="getSelectedPage($event)"></app-select-bypage>
+        </div>
+    </div>
+    <mat-card-content class="content">
+        <app-img-list [imgList]="imgList"></app-img-list>
+    </mat-card-content>
+</mat-card>

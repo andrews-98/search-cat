@@ -1,0 +1,9 @@
+<mat-form-field appearance="fill">
+    <mat-label>Breed</mat-label>
+    <mat-select [(ngModel)]="selectedBreed" name="state">
+      <mat-option (click)="onSelectedBreed(selectedBreed)">All</mat-option>
+      <mat-option *ngFor="let state of breedList" [value]="state"  (click)="onSelectedBreed(state.id)" >
+        {{state.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
