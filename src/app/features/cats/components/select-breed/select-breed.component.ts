@@ -11,6 +11,7 @@ export class SelectBreedComponent implements OnInit {
 
   breedList: CatData[] = []
   selectedBreed: string = 'All'
+  
   @Output() emitBreed = new EventEmitter<string>();
 
 

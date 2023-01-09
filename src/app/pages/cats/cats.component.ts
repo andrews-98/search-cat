@@ -23,15 +23,18 @@ export class CatsComponent implements OnInit {
   getSelectedBreed(id: string) {
     this.selectedBreed = id
     this.imgList = null
-    if (id === 'All') {
+     
+    if(id === 'All'){
       this.getAllCats()
     } else {
-
       this.service.getCatBySelectedBreed(this.selectedBreed, this.selectedPage).subscribe(data => {
         this.imgList = data
-
+  
       })
     }
+
+   
+
 
   }
 
