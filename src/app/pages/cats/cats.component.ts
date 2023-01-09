@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { TitleStrategy } from '@angular/router';
 import { CatData } from '@features/cats/interfaces/cat-interface';
 import { CatDataService } from '@features/cats/service/catdata.service';
 
@@ -23,19 +22,15 @@ export class CatsComponent implements OnInit {
   getSelectedBreed(id: string) {
     this.selectedBreed = id
     this.imgList = null
-     
-    if(id === 'All'){
+
+    if (id === 'All') {
       this.getAllCats()
     } else {
       this.service.getCatBySelectedBreed(this.selectedBreed, this.selectedPage).subscribe(data => {
         this.imgList = data
-  
+
       })
     }
-
-   
-
-
   }
 
   getSelectedPage(item: string) {
@@ -46,7 +41,6 @@ export class CatsComponent implements OnInit {
     } else {
       this.getSelectedBreed(this.selectedBreed)
     }
-
   }
 
   getAllCats() {
