@@ -14,7 +14,8 @@ import { SharedModule } from '../shared';
     SharedModule
   ],
   exports: [ 
-    MainComponent
+    MainComponent,
+    HeaderComponent
   ]
 })
 export class LayoutModule { }
